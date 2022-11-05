@@ -4,6 +4,7 @@ import { Autocomplete } from "@mantine/core";
 import { contentAtom } from "../store/contentStore";
 import { useAtom } from "jotai";
 import Image from "./Image";
+import Text from "./Text";
 
 export default function Popup({
   isOpen,
@@ -29,12 +30,11 @@ export default function Popup({
         overlayColor="#848484"
         centered={true}
         styles={{ modal: { backgroundColor: "#f4f7fc", height: 400 } }}
+        size="auto"
       >
         {value.length > 0 ? (
           value === "Text" ? (
-            <div>
-              <h1>Text</h1>
-            </div>
+            <Text />
           ) : value === "Image" ? (
             <Image />
           ) : value === "Accordion" ? (
