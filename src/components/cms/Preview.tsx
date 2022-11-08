@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react';
 
 export default function Preview() {
-  return <div>Preview</div>;
+  return <div className='text-30px'>Preview</div>;
 }

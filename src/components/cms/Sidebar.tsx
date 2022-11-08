@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { CgAddR } from "react-icons/cg";
+import React, { useState } from 'react';
+import { CgAddR } from 'react-icons/cg';
 export default function Sidebar({
   state,
   setState,
@@ -8,10 +8,13 @@ export default function Sidebar({
   setState: (value: boolean) => void;
 }) {
   return (
-    <div className="w-1/5 h-full flex flex-col justify-start bg-hex-fff ">
-      <div className="flex flex-row justify-between items-center w-full ">
-        <h1>Content</h1>
-        <CgAddR onClick={() => setState(!state)} />
+    <div className='w-3/10 h-full flex flex-col justify-start bg-hex-fff '>
+      <div className='flex flex-row justify-between items-center w-full '>
+        <h1 className='text-30px'>Content</h1>
+        <CgAddR
+          className='cursor-pointer text-40px'
+          onClick={() => setState(!state)}
+        />
       </div>
     </div>
   );
